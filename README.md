@@ -5,10 +5,10 @@ Live DEMO: https://movies-recommendat.streamlit.app/
 
 ## Features
 
-- 🎬 Browse and select from thousands of movies
-- 🤖 Get 5 personalized movie recommendations based on similarity
-- 🖼️ Display movie posters (requires TMDB API key)
-- 🚀 Fast and responsive web interface
+- Browse and select from thousands of movies
+- Get 5 personalized movie recommendations based on similarity
+- Display movie posters (requires TMDB API key)
+- Fast and responsive web interface
 
 ## Demo
 
@@ -57,12 +57,16 @@ The app will open in your browser at `http://localhost:8501`
 ```
 movie_recommender/
 ├── app.py                      # Streamlit web application
-├── model.ipynb                 # Jupyter notebook for model training
-├── movie_list.pkl              # Preprocessed movie data
-├── similarity.pkl              # Pre-computed similarity matrix
-├── tmdb_5000_movies.csv        # Movie dataset
-├── tmdb_5000_credits.csv       # Movie credits dataset
-└── README.md                   # Project documentation
+├── requirements.txt            # Project dependencies
+├── README.md                   # Project documentation
+├── data/                       # Dataset directory
+│   ├── tmdb_5000_movies.csv    # Movie dataset
+│   └── tmdb_5000_credits.csv   # Movie credits dataset
+├── models/                     # Model files directory
+│   ├── movie_list.pkl          # Preprocessed movie data
+│   └── similarity.pkl          # Pre-computed similarity matrix
+└── notebooks/                  # Jupyter notebooks
+    └── model.ipynb             # Jupyter notebook for model training
 ```
 
 ## Technologies Used
